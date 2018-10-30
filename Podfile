@@ -6,7 +6,6 @@ target 'Kettle' do
   use_frameworks!
 
   # Pods for Kettle
-
   target 'KettleTests' do
     inherit! :search_paths
     # Pods for testing

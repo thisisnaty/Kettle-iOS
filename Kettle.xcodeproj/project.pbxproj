@@ -16,6 +16,9 @@
 		E058F82D218784B90023C311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E058F82B218784B90023C311 /* LaunchScreen.storyboard */; };
 		E058F838218784B90023C311 /* KettleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058F837218784B90023C311 /* KettleTests.swift */; };
 		E058F843218784B90023C311 /* KettleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058F842218784B90023C311 /* KettleUITests.swift */; };
+		E074238A21878FBA00BD4D1D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074238921878FBA00BD4D1D /* CircleView.swift */; };
+		E0CE01872187D679008FCB7B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CE01862187D679008FCB7B /* PreviewView.swift */; };
+		E0CE01892187DAD8008FCB7B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CE01882187DAD8008FCB7B /* CameraView.swift */; };
 		EB349E696D1DF92B24F8AA57 /* Pods_KettleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BB6A0A451C2BEF8DA6A37B /* Pods_KettleUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		E058F83E218784B90023C311 /* KettleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KettleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E058F842218784B90023C311 /* KettleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KettleUITests.swift; sourceTree = "<group>"; };
 		E058F844218784B90023C311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E074238921878FBA00BD4D1D /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E0CE01862187D679008FCB7B /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		E0CE01882187DAD8008FCB7B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		F6FC7D124B6AB4AC1E63AE9B /* Pods-KettleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KettleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KettleUITests/Pods-KettleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,7 @@
 		E058F821218784B80023C311 /* Kettle */ = {
 			isa = PBXGroup;
 			children = (
+				E074238821878F8800BD4D1D /* CustomUI */,
 				E058F822218784B80023C311 /* AppDelegate.swift */,
 				E058F824218784B80023C311 /* ViewController.swift */,
 				E058F826218784B80023C311 /* Main.storyboard */,
@@ -163,6 +170,16 @@
 				E058F844218784B90023C311 /* Info.plist */,
 			);
 			path = KettleUITests;
+			sourceTree = "<group>";
+		};
+		E074238821878F8800BD4D1D /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				E074238921878FBA00BD4D1D /* CircleView.swift */,
+				E0CE01862187D679008FCB7B /* PreviewView.swift */,
+				E0CE01882187DAD8008FCB7B /* CameraView.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,13 +253,16 @@
 				TargetAttributes = {
 					E058F81E218784B80023C311 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					E058F832218784B90023C311 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = E058F81E218784B80023C311;
 					};
 					E058F83D218784B90023C311 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = E058F81E218784B80023C311;
 					};
 				};
@@ -356,7 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E074238A21878FBA00BD4D1D /* CircleView.swift in Sources */,
+				E0CE01872187D679008FCB7B /* PreviewView.swift in Sources */,
 				E058F825218784B80023C311 /* ViewController.swift in Sources */,
+				E0CE01892187DAD8008FCB7B /* CameraView.swift in Sources */,
 				E058F823218784B80023C311 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,7 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pic2cal.Kettle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -559,7 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pic2cal.Kettle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -580,7 +603,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pic2cal.KettleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kettle.app/Kettle";
 			};
@@ -602,7 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pic2cal.KettleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kettle.app/Kettle";
 			};
@@ -623,7 +646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pic2cal.KettleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Kettle;
 			};
@@ -644,7 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pic2cal.KettleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Kettle;
 			};
