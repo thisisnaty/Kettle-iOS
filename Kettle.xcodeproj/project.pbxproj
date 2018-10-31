@@ -17,6 +17,8 @@
 		E058F838218784B90023C311 /* KettleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058F837218784B90023C311 /* KettleTests.swift */; };
 		E058F843218784B90023C311 /* KettleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E058F842218784B90023C311 /* KettleUITests.swift */; };
 		E074238A21878FBA00BD4D1D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074238921878FBA00BD4D1D /* CircleView.swift */; };
+		E0C8B3ED2188E30100251BBB /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0C8B3EC2188E30100251BBB /* CameraView.xib */; };
+		E0C8B3EF2188E3D000251BBB /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8B3EE2188E3D000251BBB /* CustomView.swift */; };
 		E0CE01872187D679008FCB7B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CE01862187D679008FCB7B /* PreviewView.swift */; };
 		E0CE01892187DAD8008FCB7B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CE01882187DAD8008FCB7B /* CameraView.swift */; };
 		EB349E696D1DF92B24F8AA57 /* Pods_KettleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BB6A0A451C2BEF8DA6A37B /* Pods_KettleUITests.framework */; };
@@ -62,6 +64,8 @@
 		E058F842218784B90023C311 /* KettleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KettleUITests.swift; sourceTree = "<group>"; };
 		E058F844218784B90023C311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E074238921878FBA00BD4D1D /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E0C8B3EC2188E30100251BBB /* CameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		E0C8B3EE2188E3D000251BBB /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		E0CE01862187D679008FCB7B /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		E0CE01882187DAD8008FCB7B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		F6FC7D124B6AB4AC1E63AE9B /* Pods-KettleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KettleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KettleUITests/Pods-KettleUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +181,9 @@
 			children = (
 				E074238921878FBA00BD4D1D /* CircleView.swift */,
 				E0CE01862187D679008FCB7B /* PreviewView.swift */,
+				E0C8B3EE2188E3D000251BBB /* CustomView.swift */,
 				E0CE01882187DAD8008FCB7B /* CameraView.swift */,
+				E0C8B3EC2188E30100251BBB /* CameraView.xib */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				E058F81B218784B80023C311 /* Sources */,
 				E058F81C218784B80023C311 /* Frameworks */,
 				E058F81D218784B80023C311 /* Resources */,
+				27346C5E63DDF4E52B4CB22E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +218,7 @@
 				E058F82F218784B90023C311 /* Sources */,
 				E058F830218784B90023C311 /* Frameworks */,
 				E058F831218784B90023C311 /* Resources */,
+				EDB8A0BED98794289DE52E7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C8B3ED2188E30100251BBB /* CameraView.xib in Resources */,
 				E058F82D218784B90023C311 /* LaunchScreen.storyboard in Resources */,
 				E058F82A218784B90023C311 /* Assets.xcassets in Resources */,
 				E058F828218784B80023C311 /* Main.storyboard in Resources */,
@@ -333,6 +342,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		27346C5E63DDF4E52B4CB22E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kettle/Pods-Kettle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kettle/Pods-Kettle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8581F438917F7A9ABB0B679A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,6 +378,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDB8A0BED98794289DE52E7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KettleTests/Pods-KettleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KettleTests/Pods-KettleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F45EF23E5E2571B8AF479393 /* [CP] Check Pods Manifest.lock */ = {
@@ -379,6 +430,7 @@
 				E074238A21878FBA00BD4D1D /* CircleView.swift in Sources */,
 				E0CE01872187D679008FCB7B /* PreviewView.swift in Sources */,
 				E058F825218784B80023C311 /* ViewController.swift in Sources */,
+				E0C8B3EF2188E3D000251BBB /* CustomView.swift in Sources */,
 				E0CE01892187DAD8008FCB7B /* CameraView.swift in Sources */,
 				E058F823218784B80023C311 /* AppDelegate.swift in Sources */,
 			);

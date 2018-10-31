@@ -6,9 +6,13 @@ target 'Kettle' do
   use_frameworks!
 
   # Pods for Kettle
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  
   target 'KettleTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'RxBlocking', '~> 4.0'
+    pod 'RxTest',     '~> 4.0'
   end
 
   target 'KettleUITests' do

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraView" customModule="Kettle" customModuleProvider="target">
+            <connections>
+                <outlet property="captureButton" destination="5FJ-4M-2RY" id="oDL-Yp-z5I"/>
+                <outlet property="previewView" destination="EJ7-ZW-iMH" id="l6M-E8-13T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-ZW-iMH" customClass="PreviewView" customModule="Kettle" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FJ-4M-2RY" customClass="CircleView" customModule="Kettle" customModuleProvider="target">
+                            <rect key="frame" x="147.5" y="543.5" width="80" height="80"/>
+                            <color key="backgroundColor" red="0.51807724020000001" green="0.70612470579999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="aOK-z2-1bw"/>
+                                <constraint firstAttribute="width" constant="80" id="gIl-bv-Yab"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.43584624989999998" green="0.54647912750000005" blue="0.96974174219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5FJ-4M-2RY" firstAttribute="centerY" secondItem="EJ7-ZW-iMH" secondAttribute="centerY" multiplier="1.75" id="19P-IN-b1V"/>
+                        <constraint firstItem="5FJ-4M-2RY" firstAttribute="centerX" secondItem="EJ7-ZW-iMH" secondAttribute="centerX" id="FqL-pr-4Uo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EJ7-ZW-iMH" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="42g-hu-b5l"/>
+                <constraint firstItem="EJ7-ZW-iMH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="H8a-Jh-NHB"/>
+                <constraint firstItem="EJ7-ZW-iMH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="elZ-Ch-Vdx"/>
+                <constraint firstItem="EJ7-ZW-iMH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vUt-y6-gMS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

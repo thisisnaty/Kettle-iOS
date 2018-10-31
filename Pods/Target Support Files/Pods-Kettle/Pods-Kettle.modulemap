@@ -1,6 +1,0 @@
-framework module Pods_Kettle {
-  umbrella header "Pods-Kettle-umbrella.h"
-
-  export *
-  module * { export * }
-}
